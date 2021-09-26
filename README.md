@@ -1,21 +1,71 @@
 # Conditions
 
-## Programs
+ * [if-else statements](#if-else-statements)
+ * [Conditions](#conditions-1)
+ * [Comparison operators](#comparison-operators)
+ * [Assignment](#assignment)
+   + [Speed conversions (4 points)](#speed-conversions--4-points-)
+   + [Sorting (4 points)](#sorting--4-points-)
+   + [Linear inequality (6 points)](#linear-inequality--6-points-)
+   + [Quadratic equation (6 points)](#quadratic-equation--6-points-)
+   + [Leap year (6 points)](#leap-year--6-points-)
+   + [Triangle Area (6 points)](#triangle-area--6-points-)
+   + [Brick (10 points)](#brick--10-points-)
 
-### Sorting (2 points)
-
-Write a program in the directory `sorting`.
-
-Sort three numbers that are provided as the input.
-
-Example:
+## if-else statements
 
 ```
-The program sorts three numbers.
-Enter the numbers:
-5 -2 0
-Numbers in a sorted order: -2 0 5
+if <condition> {
+
+} else {
+
+}
 ```
+
+```
+if <condition> {
+
+}
+```
+
+```
+if <condition> {
+
+} else if <condition> {
+
+} else if <condition> {
+
+} else {
+
+}
+```
+
+```
+if <condition> {
+    if <condition> {
+
+    } else {
+
+    }
+} else {
+
+}
+```
+
+## Conditions
+
+Something that a computer can check, if it's true or not.
+
+## Comparison operators
+
+ * `<` -- less
+ * `==` -- equal
+ * `<=` -- less or equal
+ * `!=` -- not equal
+ * `>` -- greater
+ * `>=` -- greater or equal.
+
+## Assignment
 
 ### Speed conversions (4 points)
 
@@ -40,6 +90,21 @@ This program performs km/h <-> m/s speed conversion. Please enter
 Enter the speed in m/s:
 100
 The speed in km/h is 360
+```
+
+### Sorting (4 points)
+
+Write a program in the directory `sorting`.
+
+Sort three numbers that are provided as the input.
+
+Example:
+
+```
+The program sorts three numbers.
+Enter the numbers:
+5 -2 0
+Numbers in a sorted order: -2 0 5
 ```
 
 ### Linear inequality (6 points)
