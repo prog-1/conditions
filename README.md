@@ -1,17 +1,5 @@
 # Conditions
 
- * [if-else statements](#if-else-statements)
- * [Conditions](#conditions-1)
- * [Comparison operators](#comparison-operators)
- * [Assignment](#assignment)
-   + [Speed conversions (4 points)](#speed-conversions--4-points-)
-   + [Sorting (4 points)](#sorting--4-points-)
-   + [Linear inequality (6 points)](#linear-inequality--6-points-)
-   + [Quadratic equation (6 points)](#quadratic-equation--6-points-)
-   + [Leap year (6 points)](#leap-year--6-points-)
-   + [Triangle Area (6 points)](#triangle-area--6-points-)
-   + [Brick (10 points)](#brick--10-points-)
-
 ## if-else statements
 
 ```
