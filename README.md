@@ -117,3 +117,11 @@ Enter three triangle sides:
 4 5 6
 Triangle area: 9.921567416492215
 ```
+
+### Brick (10 points)
+
+You are given a hole of a rectangular shape defined by dimensions `A x B` (`A`
+and `B1 are provided as an input), and a brick with dimensions `P x Q x R`
+(`P`, `Q` and `R` are provided as an input). The brick can be rotated to fit in
+the hole, but it must stay perpendicular to the hole surface. Write a program
+that determines if the brick can be inserted in the hole.
