@@ -10,7 +10,11 @@ func main() {
 	fmt.Print("Enter the brick dimensions (3 numbers): ")
 	var p, q, r float64
 	fmt.Scan(&p, &q, &r)
-	if a >= q && b >= r || b >= r && a >= q {
+	if a <= 0 || b <= 0 || p <= 0 || q <= 0 || r <= 0 {
+		fmt.Println("ERROR: enter number greater than zero!")
+		return
+	}
+	if a >= q && b >= r || b >= q && a >= r {
 		fmt.Println("The brick can be inserted in the hole!")
 	} else {
 		fmt.Println("The brick cannot be inserted in the hole.")
