@@ -14,7 +14,7 @@ func main() {
 		fmt.Println("ERROR: enter number greater than zero!")
 		return
 	}
-	if a >= q && b >= r || b >= q && a >= r {
+	if a >= q && b >= r || b >= q && a >= r || a >= p && b >= r || a >= r && b >= p || a >= p && b >= q || a >= q && b >= p {
 		fmt.Println("The brick can be inserted in the hole!")
 	} else {
 		fmt.Println("The brick cannot be inserted in the hole.")
