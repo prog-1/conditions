@@ -7,10 +7,8 @@ func main() {
 	fmt.Println("Enter the year:")
 	var year int
 	fmt.Scan(&year)
-	if year%400 == 0 || year%4 == 0 {
+	if year%400 == 0 || year%100 != 0 && year%4 == 0 {
 		fmt.Println(year, "is a leap year.")
-	} else if year%100 == 0 {
-		fmt.Println(year, "is a not leap year.")
 	} else {
 		fmt.Println(year, "is a not leap year.")
 	}
