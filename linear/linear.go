@@ -10,16 +10,13 @@ func main() {
 	if A > 0 {
 		x := -B / A
 		fmt.Printf("x > %v", x)
-	}
-	if A < 0 {
+	} else if A < 0 {
 		x1 := -B / A
 		fmt.Printf("x < %v", x1)
-	}
-	if A == 0 {
+	} else {
 		if B <= 0 {
 			fmt.Println("No answer.")
-		}
-		if B > 0 {
+		} else {
 			fmt.Println("Answer is all possible numbers.")
 		}
 	}
