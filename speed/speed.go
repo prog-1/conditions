@@ -16,12 +16,13 @@ func main() {
 		fmt.Scan(&spd)
 		answer := (spd * 5) / 18
 		fmt.Printf("The speed in m/s is %v", answer)
-
-	} else {
+	}
+	if num == 2 {
 		fmt.Println("Enter the speed in m/s: ")
 		fmt.Scan(&spd)
 		answer := (spd / 5) * 18
 		fmt.Printf("The speed in km/h is %v", answer)
+	} else {
+		println("Please, restart this program and choose ONLY 1 or 2.")
 	}
-
 }
