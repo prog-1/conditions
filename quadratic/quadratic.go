@@ -16,7 +16,7 @@ func main() {
 			fmt.Printf("x = %v", x)
 		} else {
 			if C != 0 {
-				fmt.Println("No answer.")
+				fmt.Println("No real answers.")
 			} else {
 				fmt.Println("Answer is all possible numbers.")
 			}
