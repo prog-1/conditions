@@ -16,7 +16,11 @@ func main() {
 			fmt.Println("no roots")
 		}
 
+	} else if a > 0 {
+		{
+			fmt.Println("x >", -b/a)
+		}
 	} else {
-		fmt.Println("x >", -b/a)
+		fmt.Println("x <", -b/a)
 	}
 }
