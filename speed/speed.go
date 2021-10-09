@@ -10,18 +10,17 @@ func main() {
 	fmt.Scanln(&number)
 	if number == 1 {
 		fmt.Println("Enter the speed in km/h:")
-		var firstspeedkmh float64
-		fmt.Scanln(&firstspeedkmh)
-		firstspeedms := firstspeedkmh / 3.6
-		fmt.Println("The speed in m/s is:", firstspeedms)
+		var speedkmh float64
+		fmt.Scanln(&speedkmh)
+		speedms := speedkmh / 3.6
+		fmt.Println("The speed in m/s is:", speedms)
 	} else if number == 2 {
 		fmt.Println("Enter the speed in m/s:")
-		var secondspeedms float64
-		fmt.Scanln(&secondspeedms)
-		secondspeedkmh := secondspeedms * 3.6
-		fmt.Println("The speed in km/h is", secondspeedkmh)
+		var speedms float64
+		fmt.Scanln(&speedms)
+		speedkmh := speedms * 3.6
+		fmt.Println("The speed in km/h is", speedkmh)
 	} else {
 		fmt.Println("Error")
-		return
 	}
 }
