@@ -9,14 +9,17 @@ func main() {
 	var a, b, c float64
 	fmt.Println("Enter three numbers:")
 	fmt.Scan(&a, &b, &c)
-	if b > a && b > c && c > a {
-		a, b, c = a, c, b
+	fmt.Println("Numbers in a sorted order:", a, b, c)
+	if a > b {
+		a, b = b, a
 		fmt.Println("Numbers in a sorted order:", a, b, c)
-	} else if b > a && b > c && a > c {
-		a, b, c = c, a, b
+	}
+	if b > c {
+		b, c = c, b
 		fmt.Println("Numbers in a sorted order:", a, b, c)
-	} else if c > a && c > b && a > b {
-		a, b, c = b, a, c
+	}
+	if a > c {
+		a, c = c, a
 		fmt.Println("Numbers in a sorted order:", a, b, c)
 	}
 }
