@@ -14,15 +14,14 @@ func main() {
 		fmt.Scanln(&v)
 		ms := v / 3.6
 		fmt.Println(v, "km/h =", ms, "m/s")
+	}
+	if a == 2 {
+		fmt.Println("Enter speed m/s")
+		var b float64
+		fmt.Scanln(&b)
+		km := b * 3.6
+		fmt.Println(b, "m/s =", km, "km/h")
 	} else {
-		if a == 2 {
-			fmt.Println("Enter speed m/s")
-			var b float64
-			fmt.Scanln(&b)
-			km := b * 3.6
-			fmt.Println(b, "m/s =", km, "km/h")
-		} else {
-			fmt.Println("Wrong number")
-		}
+		fmt.Println("Wrong number")
 	}
 }
