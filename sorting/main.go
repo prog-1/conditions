@@ -21,6 +21,10 @@ func main() {
 		a, b = b, a
 	} else if a == b && b > c && a > c {
 		a, c = c, a
+	} else if a == c && a > b {
+		a, b = b, a
+	} else if a == c && a < b {
+		b, c = c, b
 	}
 	fmt.Println("Numbers in a sorted order:", a, b, c)
 }
