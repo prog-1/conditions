@@ -10,11 +10,11 @@ func main() {
 	var a, b, c float64
 	fmt.Println("Enter the coefficients A, B and C:")
 	fmt.Scan(&a, &b, &c)
-	D := b*b - 4*a*c
+	D := (b * b) - 4*a*c
 	if D < 0 {
 		fmt.Println("No roots")
 		if D == 0 {
-			fmt.Println("x1, x2 =", -b/(2*a))
+			fmt.Println("x1 = x2 =", -b/(2*a))
 			if D > 0 {
 				fmt.Println("x1=", (-b+math.Sqrt(D))/(2*a))
 				fmt.Println("x2=", (-b-math.Sqrt(D))/(2*a))
