@@ -17,4 +17,8 @@ func main() {
 	} else {
 		fmt.Println("A triangle with such sides doesn't exist.")
 	}
+	if a <= 0 || b <= 0 || c <= 0 {
+		fmt.Println("Lenght need to be greater than 0")
+		return
+	}
 }
