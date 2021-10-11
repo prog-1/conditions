@@ -15,7 +15,7 @@ func main() {
 	} else if A > 0 {
 		x := -B / A
 		fmt.Println("x >", x)
-	} else if A == 0 {
+	} else {
 		fmt.Println("ERROR: cannot divide by zero")
 	}
 }
