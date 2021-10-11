@@ -25,7 +25,7 @@ func main() {
 	} else {
 		D := b*b - 4*a*c
 		if D < 0 {
-			fmt.Println("x ∉ R")
+			fmt.Println("x ∈ C")
 		} else if D == 0 {
 			x := -b / (2 * a)
 			fmt.Println("x1 = x2 =", x)
