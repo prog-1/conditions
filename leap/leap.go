@@ -13,7 +13,7 @@ func main() {
 		} else {
 			fmt.Println(year, "is not a leap year.")
 		}
-	} else if year%100 != 0 {
+	} else {
 		if year%4 == 0 {
 			fmt.Println(year, "is a leap year.")
 		} else {
