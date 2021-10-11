@@ -1,40 +1,26 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
 
 func main() {
 	fmt.Println(`The program sorts three numbers.
 	Enter the numbers:`)
 	var a, b, c float64
 	fmt.Scanln(&a, &b, &c)
-	if a > b {
-		if b > c {
-			fmt.Print("Numbers in a sorted order:", c, b, a)
-			return
-		} else {
-			if b < c {
-				if a < c {
-					fmt.Print("Numbers in a sorted order:", b, a, c)
-					return
-				} else {
-					fmt.Print("Numbers in a sorted order:", b, c, a)
-					return
-				}
-
-			}
-		}
-
+	max2 := (a + b + math.Abs(a-b)) / 2
+	max := (c + max2 + math.Abs(c-max2)) / 2
+	min2 := (a + b - math.Abs(a-b)) / 2
+	min := (c + min2 - math.Abs(c-min2)) / 2
+	if a != min && a != max {
+		fmt.Print(min, a, max)
 	} else {
-		if a < c {
-			if b < c {
-				fmt.Print("Numbers in a sorted order:", a, b, c)
-				return
-			} else {
-				fmt.Print("Numbers in a sorted order:", a, c, b)
-				return
-			}
+		if b != min && b != max {
+			fmt.Print(min, b, max)
 		} else {
-			fmt.Print("Numbers in a sorted order:", c, a, b)
+			fmt.Print(min, c, max)
 		}
 	}
 
