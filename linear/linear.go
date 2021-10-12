@@ -16,14 +16,14 @@ func main() {
 	} else if B == 0 {
 		if A > 0 {
 			fmt.Println("x > 0")
-			if A < 0 {
-				fmt.Println("x < 0")
-			}
+		} else {
+			fmt.Println("x < 0")
 		}
-	}
-	if A < 0 {
-		fmt.Println("x <", -B/A)
-	} else if A > 0 {
-		fmt.Println("x >", -B/A)
+	} else if A < 0 {
+		result := -B / A
+		fmt.Println("x <", result)
+	} else {
+		result := -B / A 
+		fmt.Println("x >", result)
 	}
 }
