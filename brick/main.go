@@ -11,27 +11,10 @@ func main() {
 	var p, q, r float64
 	fmt.Println("Enter the brick dimensions (3 numbers):")
 	fmt.Scan(&p, &q, &r)
-	if p < r && p > q && r > q {
-		p, r, q = q, p, r
-	} else if r < p && q < p && r < q {
-		p, r, q = r, q, p
-	} else if p < q && q < r && p < r {
-		r, q = q, r
-	} else if q < r && r < p && q < p {
-		p, q = q, p
-	} else if r < p && p < q && r < q {
-		p, r = r, p
-	}
-	if p <= a && r <= b || p <= b && r <= a {
-		if p <= a && q <= b || p < b && q <= a {
-			if q <= a && r <= b || q <= b && r <= a {
-				fmt.Println("The brick can be inserted in the hole!")
-			} else {
-				fmt.Println("The brick can be inserted in the hole!")
-			}
-		} else {
-			fmt.Println("The brick can be inserted in the hole!")
-		}
+	if a >= p && b >= q || b >= p && a >= q || a >= q && b >= r || a >= r && b >= q || a >= p && b >= r || a >= r && b >= p {
+		fmt.Println("The brick can be inserted in the hole!")
+	} else if p <= 0 || q <= 0 || r <= 0 || a <= 0 || b <= 0 {
+		fmt.Println("Dimensions does not exist.")
 	} else {
 		fmt.Println("The brick cannot be inserted in the hole.")
 	}
