@@ -15,7 +15,7 @@ func main() {
 			if c == 0 {
 				fmt.Println("Infinite roots")
 			} else {
-				fmt.Println("No roots")
+				fmt.Println("No real roots")
 			}
 		} else {
 			x := -c / b
@@ -25,7 +25,7 @@ func main() {
 	}
 	D := b*b - 4*a*c
 	if D < 0 {
-		fmt.Println("No roots")
+		fmt.Println("No real roots")
 	} else if D == 0 {
 		x := (-b+math.Sqrt(D))/(2*a)
 		fmt.Println("x1 = x2 =", x)
