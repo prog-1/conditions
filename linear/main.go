@@ -15,7 +15,9 @@ func main() {
 	} else if A > 0 {
 		x := -B / A
 		fmt.Println("x >", x)
-	} else {
-		fmt.Println("ERROR: cannot divide by zero")
+	} else if A == 0 && B > 0 {
+		fmt.Println("x ∈ R")
+	} else if A == 0 && B <= 0 {
+		fmt.Println("x ∈ ∅")
 	}
 }
