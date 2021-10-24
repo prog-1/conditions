@@ -18,6 +18,8 @@ func main() {
 		var ms float64
 		fmt.Scan(&ms)
 		fmt.Println("The speed in km/h is", ms*3.6)
+	} else {
+		fmt.Println("Please enter 1 or 2")
 	}
 
 }
