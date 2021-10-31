@@ -17,9 +17,7 @@ func main(){
 		fmt.Scan(&km)
 		s1 := 360 / (km * 1000)	
 		fmt.Println(s1)
-	}
-
-	if n == 2{
+	} else n == 2{
 		//ms to km
 		fmt.Println("Enter the speed in m/s: ")
 		fmt.Scan(&m)
