@@ -9,7 +9,7 @@ func main(){
 	var a, b, c float64
 	fmt.Println("The program finds solutions of quadratic equation.Enter the coefficients A, B and C: ")
 	fmt.Scan(&a,&b,&c)
-	d := b * b - 4 * a * b
+	d := b * b - 4 * a * c
 	if d > 0 {
 		x1 := (-b - math.Sqrt(d)) / 2 * a 
 		x2 := (-b + math.Sqrt(d)) / 2 * a 

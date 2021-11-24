@@ -17,11 +17,13 @@ func main(){
 		fmt.Scan(&km)
 		s1 := 360 / (km * 1000)	
 		fmt.Println(s1)
-	} else n == 2{
+	} if else n == 2{
 		//ms to km
 		fmt.Println("Enter the speed in m/s: ")
 		fmt.Scan(&m)
 		s2 := (1000 * m) / 360	
 		fmt.Println(s2)
+	} else {
+		fmt.Println("This isnt 1 or 2")
 	}
 }

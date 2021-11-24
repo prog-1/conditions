@@ -11,6 +11,9 @@ func main(){
 	if a < 0 {
 		x := b / a
 		fmt.Println("x <", x)
+	} else if a == 0{
+		x := -b / a
+		fmt.Println("This isnt correct lenear inequality.x cannot be 0.","x <", x)
 	} else if a > 0{
 		x := -b / a
 		fmt.Println("x >", x)
