@@ -21,6 +21,6 @@ func main() {
 		speedkmh := speedms * 3.6
 		fmt.Println("The speed in km/h is", speedkmh)
 	} else {
-		fmt.Println("Error")
+		fmt.Println("Test")
 	}
 }
