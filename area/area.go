@@ -6,14 +6,14 @@ import (
 )
 
 func main() {
-	fmt.Println("Enter three triangle sides:")
-	var x, y, z float64
-	fmt.Scan(&x, &y, &z)
-	if x+y > z && y+z > x && z+x > y {
-		s := (x + y + z) / 2
-		area := math.Sqrt(s * (s - x) * (s - y) * (s - z))
-		fmt.Println("Triangle area:", area)
-	} else {
+	fmt.Print("Enter three triangle sides: ")
+	var a, b, c float64
+	fmt.Scan(&a, &b, &c)
+	s := ((a + b + c) / 2)
+	x := math.Sqrt(s * (s - a) * (s - b) * (s - c))
+	if x != math.Sqrt(s*(s-a)*(s-b)*(s-c)) {
 		fmt.Println("A triangle with such sides doesn't exist.")
+	} else {
+		fmt.Println("Triangle area: ", x)
 	}
 }

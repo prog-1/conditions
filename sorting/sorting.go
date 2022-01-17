@@ -26,6 +26,6 @@ func main() {
 			fmt.Println("Numbers in a sorted order:", c, b, a)
 		}
 	} else {
-		fmt.Println("ALL numbers are equal.")
+		fmt.Println("All numbers are equal.")
 	}
 }
